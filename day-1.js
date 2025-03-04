@@ -12,11 +12,18 @@ function day1Part1() {
   // Try it!
   // TODO: add a new question for the player. Assign the answer to the playerOne Object.
 
+  // Define the new question and prompt the player for the answer
+  let newQuestion = "What is your favorite color?";
+  let playerAnswer = prompt(newQuestion);
+
+  // Assign the answer to the playerOne object
+  playerOne.favoriteColor = playerAnswer;
+  // Log the playerOne object to verify the new property
+  console.log(playerOne);
 
   // Try it!
   // TODO: add the answer to the new question here.
   messageParagraph.innerHTML = `Hi, ${playerOne.name}! Can you beat your hi score of ${playerOne.hiScore}?`;
-
 }
 
 part1.onclick = day1Part1;
